@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script>
+    //화살표 함수
+    // let sum = function (a, b) {
+    //   return a + b;
+    // }
+    //좀더 간결하게 사용하는 방법
+    let sum = (a, b) => a + b;
+
+    //alert(sum(100,1000));
+
+    //let double = n => n * 2;
+    //함수 표현식으로 다시 만들어 주세요.
+    let double = function (n) {
+      return n * 2;
+    }
+    //인수가 하나도 없을때 괄호를 비워 놓으면 됩니다.
+    let sayHi = () => alert("안녕하세요");
+    // sayHi();
+
+    let age = prompt("당신의 나이를 알려 주세요", 19);
+
+    let welcome = (age < 19) ?
+      () => alert('안녕') :
+      () => alert('안녕하세요!');
+
+    // welcome();
+
+    let point = prompt("당신의 점수는",0);
+
+    let score = (point <= 30) ?
+    () => alert('공부좀해라') :
+    () => alert('천잰데?');
+
+    // score();
+
+    //본문이 여러 줄인 화살표 함수
+    let sum2 = (a,b) => {//중괄호는 본문이 여러줄로 구성된다.
+      let result = a + b;
+      return result;
+    }
+
+    alert(sum2(88,22));
+    
+
+
+
+
+
+  </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

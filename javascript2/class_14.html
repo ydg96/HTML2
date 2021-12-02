@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script>
+    //JSON
+    // JavaScript Object Notation
+
+    // 클라이언트 - 서버 
+    // 자바 스크립트로 -- 문자열로 변환 name : 토니, , , 
+
+    // 객체
+    //Person {
+    //  name = 토니
+    //}
+    // 규칙 , 약속 , 표준 , JSON 형식
+    //var person = {"height" : 180 , "job" : "programmer"}
+
+    let student = {
+      name: "don",
+      age: 30,
+      isAdmin: false,
+      courses: ['html', 'css', 'js'],
+      wife: null
+    };
+
+    // 객체를 문자열로 변경 --> JSON 형식을 가진 문자열로 변환한다.
+    let json = JSON.stringify(student);
+    console.log(typeof json);
+    console.log(json);
+
+    //객체{...}
+    //배열[...]
+    //원시형 :
+    // 문자형
+    // 숫자형
+    // 불린형
+    // null
+
+    //JSON.parse 
+    //JSON 으로 다시 객체로 만들어 준다.
+    let userData = '{"name" :"Jonh" ,"age" : 35 , "isAdmin" : true}';
+
+    //다시 객체로 만들어 주는 과정
+    let user = JSON.parse(userData);
+
+    alert(user.name);
+
+  </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

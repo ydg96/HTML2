@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>자바스크립트 round 04</title>
+  <script>
+    //let
+    let d;
+    
+    var a = 5, b, c; // 전역 변수(멤버 변수와 비슷한 개념)
+    // var b;
+    // var c;
+    /*
+     자바 스크립트 주석 처리와 내부 스크립트 선언
+   */
+    function aaa() {
+      var test;
+      b = a + 5;
+      document.write("b = " + b + "<br>");
+    }
+    function bbb() {
+      c = b + 5;
+      document.write("c = " + c + "<br>");
+    }
+  </script>
+</head>
+
+<body>
+  <div>
+    <h2>자바 스크립트 전역 변수와 함수</h2>
+  </div>
+  <script>
+    // 함수 호출
+    aaa();
+    bbb();
+  </script>
+</body>
+
+</html>

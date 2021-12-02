@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    header{
+      display: flex;
+      background-color: darkgray;
+      justify-content: space-between;
+    }
+    .logo{
+      background-color: yellow;
+      flex-basis: 200px;
+    }
+    .nav{
+      display: flex;
+      flex-basis: 400px;
+    }
+    .nav div{
+      flex: 1;
+    }
+    .gnb{
+      background-color: red;
+    }
+    .lnb{
+      background-color: skyblue;
+    }
+    @media (max-width : 768px){
+      header{
+        flex-direction: column;
+      }
+      .logo{
+        flex-basis: 50px;
+      }
+      .nav{
+        flex-basis: 100px;
+        flex-direction: column;
+      }
+      
+    
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">logo</div>
+    <div class="nav">
+      <div class="gnb">gnb</div>
+      <div class="lnb">lnb</div>
+    </div>
+  </header>
+
+  <!-- <header>
+    <div class "logo">logo</div>
+    
+    <div class="gnb">gnb</div>
+    <div class="lnb">lnb</div>
+  </header>
+    -->
+</body>
+</html>
